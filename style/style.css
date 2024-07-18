@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight:400;
+  font-weight:200;
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
+}
+.playwrite-be-vlg-font {
+  font-family: "Playwrite BE VLG", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 :root{
   --primary-color:rgba(230, 83, 60, 1.00)
@@ -15,14 +22,27 @@
 }
 .body-color{
   background-color: black;
+  color: white;
 }
 /* shared style */
 .container{
   width: 90%;
   margin: 2rem auto;
   border: 1px solid white;
-
+  overflow: hidden;
 }
+.btn-orange{
+border-radius: 42px;
+background: rgb(230, 83, 60);
+width: 10rem;
+height:3.4rem;
+border: none;
+color: white;
+font-size: 18px;
+font-weight: 400;
+margin: 15px;
+}
+
 
 /* nav section starts */
 .nav-bar{
@@ -53,6 +73,101 @@
 i{
   color: white;
 }
+img{
+  width: 100%;
+}
+nav-links>ul {
+  list-style: none;
+}
+/* banner start */
+.banner{
+  display: flex;
+  gap: 5rem;
+}
+.banner-heading{
+  font-size: 78px;
+font-weight: 900;
+line-height: 120%;
+}
+.banner-discription{
+  width: 50%;
+}
+.banner-details{
+  color: rgba(255, 255, 255, 0.5);
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+
+}
+.btn{
+  border-radius: 42px;
+ background-color: rgb(0, 0, 0);
+  border: 1px solid white;
+width: 10rem;
+height:3.4rem;
+color: white;
+font-size: 18px;
+font-weight: 400;
+margin: 15px;
+}
+.card-1{
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  width: 170px;
+  height: 70px;
+  text-align: left;
+  padding: 1rem;
+  margin-left: 14rem;
+  margin-top: 9.3rem;
+  position: absolute;
+}
+.card-2{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  width: 150px;
+  height: 70px;
+  text-align: left;
+  padding: 1rem;
+  margin-left: -7rem;
+  /* margin-bottom: -80px; */
+  margin-top: -9rem;
+  position: absolute;
+}
+.round{
+  height: 20px;
+  width: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+.card-heading{
+  font-size: 40px;
+font-weight: 900;
+line-height: 40px;
+letter-spacing: 1px;
+
+}
+.card-heading-2{
+  font-size: 18px;
+font-weight: 900;
+line-height: 10px;
+letter-spacing: 1px;
+}
+
+.card-details{
+color: rgba(255, 255, 255, 0.35);
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 1px;
+margin: 0px;
+}
+
 
 /* small media  */
 
@@ -62,5 +177,20 @@ i{
     }
     .nav-item{
       display: none;
+    }
+    .banner-discription{
+      width: 100%;
+    }
+    .banner{
+      flex-direction: column;
+    }
+    .card-1{
+      margin-right: 1rem;
+      margin-top: 7rem;
+    }
+    .card-2{
+      margin-left: 1rem;
+  /* margin-bottom: -80px; */
+  margin-top: -19rem;
     }
 }
