@@ -219,6 +219,23 @@ line-height: 18px;
 letter-spacing: 0.3px;
 margin-top: 0px;
 }
+/* run section starts */
+.run{
+  gap: 50px;
+  justify-content: space-between;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  
+}
+.run-container{
+  width: 50%;
+  padding: 30px;
+}
+.run-img{
+  padding: 30px;
+  max-width: 333px;
+  border-radius: 4rem;
+}
 
 
 /* small media  */
@@ -251,5 +268,11 @@ margin-top: 0px;
     .habits-content{
       width: 100%;
       margin: 0 auto;
+    }
+    .run{
+      flex-direction: column;
+    }
+    .run-container{
+      width: 100%;
     }
 }
