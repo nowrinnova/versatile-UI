@@ -524,8 +524,11 @@ hr {
     flex-direction: column;
   }
   
-  .footer-1 {
+   .footer-1 {
     width: 100%;
-   
   }
+  .footer-2{
+    text-align: start;
+  } 
+  
 }
