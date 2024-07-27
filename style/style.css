@@ -448,6 +448,7 @@ hr {
 @media screen and (max-width: 576px) {
   .menu-bar {
     display: block;
+    font-size: 2rem;
   }
   .nav-item {
     display: none;
