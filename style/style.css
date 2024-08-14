@@ -186,7 +186,8 @@ nav-links > ul {
 }
 .habits-container {
   margin-top: 50px;
-  gap: 2.5rem;
+  /* gap: 2.5rem; */
+  justify-content: space-between;
 }
 .habits-content {
   padding: 15px;
